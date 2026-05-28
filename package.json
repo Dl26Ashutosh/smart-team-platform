@@ -1,0 +1,12 @@
+{
+  "name": "smart-team-platform",
+  "version": "1.0.0",
+  "description": "Smart team platform",
+  "license": "ISC",
+  "author": "Ashutosh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
