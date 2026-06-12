@@ -1,12 +1,25 @@
 {
   "name": "smart-team-platform",
   "version": "1.0.0",
-  "description": "Smart team platform",
+  "description": "Smart team platform - Microservices based task & project management",
   "license": "ISC",
   "author": "Ashutosh",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "install:all": "npm install && cd auth-service && npm install && cd ../user-service && npm install && cd ../project-service && npm install && cd ../task-service && npm install && cd ../notification-service && npm install && cd ../api-gateway && npm install && cd ..",
+    "dev:auth": "cd auth-service && npm run dev",
+    "dev:user": "cd user-service && npm run dev",
+    "dev:project": "cd project-service && npm run dev",
+    "dev:task": "cd task-service && npm run dev",
+    "dev:notification": "cd notification-service && npm run dev",
+    "dev:gateway": "cd api-gateway && npm run dev",
+    "start:all:docker": "docker-compose up -d",
+    "stop:all:docker": "docker-compose down",
+    "logs:docker": "docker-compose logs -f",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
   }
 }

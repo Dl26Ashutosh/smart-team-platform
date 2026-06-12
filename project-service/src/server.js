@@ -1,0 +1,11 @@
+require("dotenv").config();
+const app = require("./app");
+const connectDB = require("./config/db");
+
+connectDB();
+
+const PORT = process.env.PORT || 5003;
+
+app.listen(PORT, () => {
+  console.log(`Project Service running on port ${PORT}`);
+});

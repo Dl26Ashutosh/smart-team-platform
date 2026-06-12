@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const authRoutes = require("./routes/auth.routes");
+const projectRoutes = require("./routes/project.routes");
 const errorHandler = require("./middleware/error.middleware");
 
 const app = express();
@@ -9,9 +9,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/auth", authRoutes);
+app.use("/projects", projectRoutes);
 
-// Error handling middleware
 app.use(errorHandler);
 
 module.exports = app;
