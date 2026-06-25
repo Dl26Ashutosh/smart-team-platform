@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "API_GATEWAY",
+      "type": "shell",
+      "command": "cd api-gateway && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "AUTH_SERVICE",
+      "type": "shell",
+      "command": "cd auth-service && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "NOTIFICATION_SERVICE",
+      "type": "shell",
+      "command": "cd notification-service && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "PROJECT_SERVICE",
+      "type": "shell",
+      "command": "cd project-service && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "TASK_SERVICE",
+      "type": "shell",
+      "command": "cd task-service && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "USER_SERVICE",
+      "type": "shell",
+      "command": "cd user-service && npm start",
+      "presentation": {
+        "panel": "dedicated",
+        "group": "services",
+        "clear": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
